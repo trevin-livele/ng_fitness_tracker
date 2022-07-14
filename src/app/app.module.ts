@@ -47,7 +47,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireAuthModule
 
   ],
   providers: [AuthService, TrainingService],

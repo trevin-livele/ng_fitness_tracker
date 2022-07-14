@@ -38,6 +38,7 @@ constructor(private db: AngularFirestore){
     }
 
     startExercise(selectedId: string) {
+        
         this.runningExercise = this.availableExercises.find(
             ex => ex.id === selectedId);
         this.exerciseChanged.next({ ...this.runningExercise })
