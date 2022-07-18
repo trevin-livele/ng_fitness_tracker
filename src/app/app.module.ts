@@ -23,6 +23,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { UIService } from './shared/ui.service';
 
 
 @NgModule({
@@ -51,7 +52,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     AngularFireAuthModule
 
   ],
-  providers: [AuthService, TrainingService],
+  providers: [AuthService, TrainingService,UIService],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingComponent]
 })
