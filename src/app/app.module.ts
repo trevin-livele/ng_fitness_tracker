@@ -25,15 +25,10 @@ import { AuthModule } from './auth/auth.module';
 @NgModule({
   declarations: [
     AppComponent,
-   
-    TrainingComponent,
-    CurrentTrainingComponent,
-    NewTrainingComponent,
-    PastTrainingsComponent,
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    StopTrainingComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -44,11 +39,12 @@ import { AuthModule } from './auth/auth.module';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AuthModule
+    AuthModule,
 
   ],
   providers: [AuthService, TrainingService,UIService],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingComponent]
 })
+
 export class AppModule { }
