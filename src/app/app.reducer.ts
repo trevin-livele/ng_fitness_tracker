@@ -6,7 +6,7 @@ export interface State {
 }
 
 export const reducers: ActionReducerMap<State> = {
-    ui: fromUi.uiReducer
+    ui : fromUi.uiReducer
 };
 
 export const getUiState = createFeatureSelector<fromUi.State>('ui');
